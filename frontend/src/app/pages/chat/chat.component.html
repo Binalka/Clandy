@@ -1,0 +1,50 @@
+<style>
+  .chat-messages-show-container{
+ background-image: url('https://media.istockphoto.com/vectors/vector-set-of-design-templates-and-elements-for-customer-relationship-vector-id1096464500?k=20&m=1096464500&s=612x612&w=0&h=DLjsi9ZcoGa9jWJE-IuFMWom1eVushUvqzJJyTrssCY=');
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.chat-messages-show-list {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: black;
+}
+.chat-messages-create-container{
+  background: #616161;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.chat-messages-create-input {
+  padding: 12px;
+  margin: 29px 30px;
+  flex:2
+}
+.chat-messages-create-button {
+  height: 50px;
+  margin: auto 40px;
+  width: 100px;
+}
+
+h3{
+  text-align: center;
+}
+</style>
+
+
+<h3>Chat</h3>
+<div class="chat-messages">
+  <div class="chat-messages-show-container">
+    <ul class="chat-messages-show-list" id="message-list">
+    </ul>
+  </div>
+  <div class="chat-messages-create-container">
+    <input class="chat-messages-create-input" type="text" [(ngModel)]="message" placeholder="Enter You Message">
+    <button  class="chat-messages-create-button" (click)="Send()"> Send </button>
+  </div>
+</div>
+

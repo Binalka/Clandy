@@ -1,0 +1,40 @@
+<section class="">
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start"  style="background-image: url('https://www.giffywalls.com/blog/wp-content/uploads/2021/04/Dark-Beauty-scaled.jpeg'); height: max-content; height: 713px;">
+    <div class="container">
+      <a href="loginAdmin" style="color: black; margin-left: 1300px; text-decoration: none; padding: 15px; background-color: white;"><b>ADMIN</b></a>
+      <div class="row gx-lg-5 align-items-center">
+
+        <div class="col-lg-6 mb-5 mb-lg-0" style="background-color: black; margin-top: 100px;">
+          <div class="card" style="background-color: white; opacity: 0.9;">
+            <div class="card-body py-5 px-md-5">
+              <form (ngSubmit)="log()">
+                <div class="form-outline mb-4">
+                  <label class="form-label" style="font-size: 30px; margin-left: 220px;">LOGIN</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <h3>Password</h3>
+                  <input type="password" class="form-control" [(ngModel)]="password"  name="password" id="password" placeholder="######">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block mb-4" style="margin-left: 240px;">
+                  Login
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h3 class="my-5 display-3 fw-bold ls-tight" style="color: white;">
+            ADMIN ONLY<br />
+          </h3>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
