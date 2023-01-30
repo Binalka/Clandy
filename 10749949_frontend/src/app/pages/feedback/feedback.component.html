@@ -1,0 +1,20 @@
+<style>
+  .form-control{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+</style>
+
+<div>
+    <div>
+  <div class="container mt-4" >
+    <br><br><div class="card" style="border: 1px solid white;">
+      <h1 style="text-align: center;">Customer feedback</h1>
+      <input type="text" [(ngModel)]="feedback" [ngModelOptions]="{standalone: true}"  class="form-control"  id="feedback" placeholder="Enter Here Yore Feedback"><br>
+      <button type="submit" (click)="fdfn()" class="btn btn-primary" style="width: 550px; margin-left: auto; margin-right: auto;">Feedback</button>
+    </div>
+  </div>
+  </div>
+  </div><br><br><br><hr>
