@@ -1,0 +1,52 @@
+<section class="">
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start"  style="background-image: url('https://www.giffywalls.com/blog/wp-content/uploads/2021/04/Dark-Beauty-scaled.jpeg'); height: max-content; height: 713px;">
+    <div class="container">
+      <a href="loginAdmin" style="color: black; margin-left: 1200px; text-decoration: none; padding: 15px; background-color: white;"><b>ADMIN</b></a>
+      <div class="row gx-lg-5 align-items-center">
+
+        <div class="col-lg-6 mb-5 mb-lg-0" style="background-color: black; margin-top: 80px;">
+          <div class="card" style="background-color: white; opacity: 0.9;">
+            <div class="card-body py-5 px-md-5">
+              <form id="login" [formGroup]="loginFrom" (ngSubmit)="loginHandler()">
+                <div class="form-outline mb-4">
+                  <label class="form-label" style="font-size: 30px; margin-left: 220px;">LOGIN</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <h3>Username</h3>
+                  <input type="text" class="form-control" formControlName="username" name="username" id="Uname"  placeholder="Sophia Anne">
+                </div>
+
+                <div class="form-outline mb-4">
+                  <h3>Password</h3>
+                  <input type="password" class="form-control" formControlName="password" name="password" id="Pass" placeholder="#######">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block mb-4" name="log" id="log" style="margin-left: 240px;">
+                  Login
+                </button>
+
+                <div class="text-center">
+                  <p><a href="register" style="text-decoration: none;">Create New Account</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h3 class="my-5 display-3 fw-bold ls-tight" style="color: white;">
+            WELCOME <br />
+          </h3>
+          <H1 style="font-size: 70px; color: white;">
+            C L A N D Y
+          </H1>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+

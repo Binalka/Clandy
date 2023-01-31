@@ -1,0 +1,33 @@
+<div class="b" style="background-image: url('https://www.giffywalls.com/blog/wp-content/uploads/2021/04/Dark-Beauty-scaled.jpeg'); text-align: center;padding: 40px; color: white;">
+  <a href="login " style="margin-left: 1400px; text-decoration: none; padding: 10px; background-color: white; color: black;" >logout</a>
+  <h1>C L A N D Y</h1>
+</div><br>
+
+<div class="container mt-4" >
+    <h1>User Collection</h1>
+    <table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">NIC</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Username</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usersItem of userarry">
+        <td>{{usersItem.name}}</td>
+        <td>{{usersItem.nic }}</td>
+        <td>{{usersItem.address }}</td>
+        <td>{{usersItem.email }}</td>
+        <td>{{usersItem.phone }}</td>
+        <td>{{usersItem.username }}</td>
+        <td>
+          <button type="button" class="btn btn-danger" (click)="Del(usersItem)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
